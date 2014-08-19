@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scholarly, Trade, and Popular Journals - Ithaca College Library</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/build/production.min.js"></script>
+</head>
+<body>
+
+    <a href="https://ithacalibrary.com"><img src="images/logoNeue-smaller-black.svg" alt="Ithaca College Library" id="logo" /></a>
+
+	<ul class="navigation">
+		<li data-slide="1">1</li>
+		<li data-slide="2">2</li>
+		<li data-slide="3">3</li>
+        <li data-slide="4">4</li>
+        <li data-slide="5">5</li>
+        <li data-slide="6">6</li>
+        <li data-slide="7">7</li>
+        <li data-slide="8">8</li>
+        <li data-slide="9">9</li>
+        <li data-slide="10">10</li>
+        <li data-slide="11">11</li>
+	</ul>
+	
+    <div id="loadingDiv">
+       <img src="images/loading.png" id="loadingImage" />
+       <div>loading&hellip;</div>
+    </div>
+
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+		<div class="slide-content">
+            <div class="inner-content">
+    			<p>This short (really, we promise) tutorial is designed to test your knowledge of scholarly, trade, and popular publications and how to distinguish between them.</p>
+                <p>If you haven't already, you might want to read <a href="https://ithacalibrary.com/sp/subjects/jnltypes">our guide</a> on this subject.</p>
+                <p><strong>Directions:</strong> For each question, you will be shown some part of a publication. Your job is to classify the publication as Scholary, Trade, or Popular.</p>
+            </div>
+		</div>
+    	<a class="button" data-slide="2"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    	<span class="slide-title">types of<br/>publications</span>
+    	<img src="images/slide1/iclibAirVent.svg" id="air-vent-image" data-stellar-ratio="1.6" />
+    </div>
+
+    <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+    	<div class="slide-content">
+            <div class="inner-content">
+                <p>Let's start with an easy one. Is <i>Rolling Stone</i>&hellip;</p>
+                <form class="answers" data-form="2">
+                    <input type="radio" name="q2" id="q2s" value="wrong" />
+                    <label for="q2s">Scholarly</label>
+
+                    <input type="radio" name="q2" id="q2t" value="wrong" />
+                    <label for="q2t">Trade</label>
+
+                    <input type="radio" name="q2" id="q2p" value="right" />
+                    <label for="q2p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  You got it. You don't get much more &quot;popular&quot; than the <i>Rolling Stone.</i></div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> This is a popular magazine. How do we know? 
+                <ol>
+                    <li>Justin Bieber</li>
+                    <li>Colorful, eye-catching headlines</li>
+                    <li>Justin Bieber</li>
+                    <li>Articles mostly relate to pop culture</li>
+                </ol>
+                Also: Justin Bieber.</div>
+            </div>
+    	</div>
+    	<a class="button" data-slide="3"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p>Here's the cover of <i>Critical Reviews in Analytical Chemistry</i>. Is this journal&hellip;</p>
+                <form class="answers" data-form="3">
+                    <input type="radio" name="q3" id="q3s" value="right" />
+                    <label for="q3s">Scholarly</label>
+
+                    <input type="radio" name="q3" id="q3t" value="wrong" />
+                    <label for="q3t">Trade</label>
+
+                    <input type="radio" name="q3" id="q3p" value="wrong" />
+                    <label for="q3p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  This is definitely a scholarly journal.</div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> This is a scholarly journal. How do we know?
+                <ol>
+                    <li>&quot;Critical Reviews&quot; in the title</li>
+                    <li>Bland cover; no attempt at popular appeal</li>
+                    <li>Analytical chemistry is definitely academic material.</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+
+        <a class="button" data-slide="4"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p>And now <i>Sport Business International</i>. Is this journal&hellip;</p>
+                <form class="answers" data-form="4">
+                    <input type="radio" name="q4" id="q4s" value="wrong" />
+                    <label for="q4s">Scholarly</label>
+
+                    <input type="radio" name="q4" id="q4t" value="right" />
+                    <label for="q4t">Trade</label>
+
+                    <input type="radio" name="q4" id="q4p" value="wrong" />
+                    <label for="q4p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <small>Click on the journal pages to see them more closely.</small>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  This is a trade journal.</div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> This is a trade journal. How do we know?
+                <ol>
+                    <li>Lots of pictures, so probably not academic.</li>
+                    <li>Regular features in the table of contents include things like &quot;Careers and Jobs&quot; and &quot;Brands &amp; Marketing&quot;&mdash;likely of interest to people in the industry.</li>
+                    <li>Financial statistics are also most useful to industry insiders.</li>
+                    <li>Table of contents does not list anything that sounds like an article reporting research results.</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img-group">
+            <img class="cb-modal" alt="Sport Business International journal cover" title="Sport Business International journal cover" src="images/slide4/sportBusiness_cover.jpg" />
+            <img class="cb-modal" alt="Sport Business International table of contents" title="Sport Business International table of contents" src="images/slide4/sportBusiness_toc.jpg" />
+            <img class="cb-modal" alt="Sport Business International sample page" title="Sport Business International sample page" src="images/slide4/sportBusiness_page.jpg" />
+        </div>
+        <a class="button" data-slide="5"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p><i>Genre: Forms of Discourse and Culture</i>. Is this journal&hellip;</p>
+                <form class="answers" data-form="5">
+                    <input type="radio" name="q5" id="q5s" value="right" />
+                    <label for="q5s">Scholarly</label>
+
+                    <input type="radio" name="q5" id="q5t" value="wrong" />
+                    <label for="q5t">Trade</label>
+
+                    <input type="radio" name="q5" id="q5p" value="wrong" />
+                    <label for="q5p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  This is a scholarly journal.</div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> This is a scholarly journal. How do we know?
+                <ol>
+                    <li>Quarterly publication as indicated by &quot;Spring 2014&quot; on the cover.</li>
+                    <li>&quot;Published by Duke University Press on behalf of the University of Oklahoma&quot; on cover. It took <em>two</em> universities just to publish this! That's very scholarly.</li>
+                    <li>Footnotes and citations in articles.</li>
+                    <li>Author affiliation listed on the byline. (University of Florida&mdash;that's <em>three</em> universities!).</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img-group">
+            <img class="cb-modal" alt="Genre journal cover" title="Genre journal cover" src="images/slide5/genre_cover.jpg" />
+            <img class="cb-modal" alt="Genre table of contents" title="Genre table of contents" src="images/slide5/genre_toc.jpg" />
+            <img class="cb-modal" alt="Genre sample page" title="Genre sample page" src="images/slide5/genre_page.jpg" />
+        </div>
+        <a class="button" data-slide="6"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p><i>The New Yorker</i>. Is it&hellip;</p>
+                <form class="answers" data-form="6">
+                    <input type="radio" name="q6" id="q6s" value="wrong" />
+                    <label for="q6s">Scholarly</label>
+
+                    <input type="radio" name="q6" id="q6t" value="wrong" />
+                    <label for="q6t">Trade</label>
+
+                    <input type="radio" name="q6" id="q6p" value="right" />
+                    <label for="q6p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  This is a popular journal.</div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> This is a popular journal. How do we know?
+                <ol>
+                	<li>Decorative, appealing cover.</li>
+                	<li>The table of contents shows a wide range of topics: psychology, late-night TV, book and movie reviews. Diverse content to appeal to appeal to a general readership.</li>
+                	<li>Full-page ad for ice cream. Academic journals rarely have ads. Trade journals do, but they're usually for specialized products or services.</li>
+                	<li>There's a big yellow sticker on the cover that says &quot;POPULAR PERIODICALS.&quot; You're welcome.</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img-group">
+            <img class="cb-modal" alt="New Yorker cover" title="New Yorker cover" src="images/slide6/newYorker_cover.jpg" />
+            <img class="cb-modal" alt="New Yorker table of contents" title="New Yorker table of contents" src="images/slide6/newYorker_toc.jpg" />
+            <img class="cb-modal" alt="New Yorker ad" title="New Yorker ad" src="images/slide6/newYorker_ad.jpg" />
+        </div>
+        <a class="button" data-slide="7"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p><i>The Journal of Experimental Biology</i>. Is it&hellip;</p>
+                <form class="answers" data-form="7">
+                    <input type="radio" name="q7" id="q7s" value="right" />
+                    <label for="q7s">Scholarly</label>
+
+                    <input type="radio" name="q7" id="q7t" value="wrong" />
+                    <label for="q7t">Trade</label>
+
+                    <input type="radio" name="q7" id="q7p" value="wrong" />
+                    <label for="q7p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  This is a scholarly journal.</div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> This is a scholarly journal. How do we know?
+                <ol>
+                	<li>Table of contents shows articles that are of interest only to biologists. The rest of us aren't too worried about pitfalls in our invertebrate proteosome assays.</li>
+                	<li>Article authors are researchers. IC's own Andy Smith is an author! #streetcred</li>
+                	<li>Beneath the abstract and key words on the article page, you'll notice a line stating the date the article was received and another date when it was accepted. This is important for academic articles in case a question of priority arises (i.e., &quot;No, <em>I</em> discovered it first!&quot;).</li>
+                	<li>What was happening in that five-month gap between receipt and acceptance? Probably peer review.</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img-group">
+            <img class="cb-modal" alt="Journal of Experimental Biology cover" title="Journal of Experimental Biology cover" src="images/slide7/JEP_cover.jpg" />
+            <img class="cb-modal" alt="Journal of Experimental Biology table of contents" title="Journal of Experimental Biology table of contents" src="images/slide7/JEP_toc.jpg" />
+            <img class="cb-modal" alt="Journal of Experimental Biology sample page" title="Journal of Experimental Biology sample page" src="images/slide7/JEP_page.jpg" />
+        </div>
+        <a class="button" data-slide="8"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p><i>Scientific American</i>. Is it&hellip;</p>
+                <form class="answers" data-form="8">
+                    <input type="radio" name="q8" id="q8s" value="wrong" />
+                    <label for="q8s">Scholarly</label>
+
+                    <input type="radio" name="q8" id="q8t" value="wrong" />
+                    <label for="q8t">Trade</label>
+
+                    <input type="radio" name="q8" id="q8p" value="right" />
+                    <label for="q8p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  This is a popular journal.</div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> Yes, it has the word &quot;scientific&quot; in the title, which sounds scholarly. But it's still a popular journal. Two big clues:
+                    <ol>
+                        <li>The <em>content</em> of the botulism article. Notice how it refers to the scientists as &quot;they.&quot; This is reporting <em>about</em> science, not original scientific research.</li>
+                        <li>The <em>byline</em> on the botulism article. The author is listed as Helen Branswell, but <em>without any credentials or affiliations.</em> A quick Google search shows that Ms. Branswell is a medical reporter, not a scientist.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <img src="images/slide8/bot1.png" class="bot" id="bot1a" data-stellar-ratio="2" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1b" data-stellar-ratio="1" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1c" data-stellar-ratio="2" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1d" data-stellar-ratio="1" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1e" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1f" data-stellar-ratio="1" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1g" data-stellar-ratio="2" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1h" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1i" data-stellar-ratio="1" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1j" data-stellar-ratio="2" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1k" data-stellar-ratio="1" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1l" data-stellar-ratio="1" />
+        <img src="images/slide8/bot1.png" class="bot" id="bot1m" data-stellar-ratio="2" />
+
+        <img src="images/slide8/bot2.png" class="bot" id="bot2a" data-stellar-ratio="1" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2b" data-stellar-ratio="1" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2c" data-stellar-ratio="2" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2d" data-stellar-ratio="2" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2e" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2f" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2g" data-stellar-ratio="2" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2h" data-stellar-ratio="1" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2i" data-stellar-ratio="1" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2j" data-stellar-ratio="1" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2k" data-stellar-ratio="2" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2l" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2m" data-stellar-ratio="1" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2n" data-stellar-ratio="2" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2o" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2p" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2q" data-stellar-ratio="1" />
+        <img src="images/slide8/bot2.png" class="bot" id="bot2r" data-stellar-ratio="1" />
+
+        <img src="images/slide8/bot3.png" class="bot" id="bot3a" data-stellar-ratio="2" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3b" data-stellar-ratio="2" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3c" data-stellar-ratio="1" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3d" data-stellar-ratio="2" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3e" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3f" data-stellar-ratio="1" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3g" data-stellar-ratio="1" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3h" data-stellar-ratio="1" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3i" data-stellar-ratio="2" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3j" data-stellar-ratio="2" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3k" data-stellar-ratio="1" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3l" data-stellar-ratio="0.8" />
+        <img src="images/slide8/bot3.png" class="bot" id="bot3m" data-stellar-ratio="0.8" />
+
+        <div class="img-group">
+            <img class="cb-modal" alt="Scientific American cover" title="Scientific American cover" src="images/slide8/sciAm_cover.jpg" />
+            <img class="cb-modal" alt="Scientific American sample page" title="Scientific American sample page" src="images/slide8/sciAm_page.jpg" />
+        </div>
+
+        <a class="button" data-slide="9"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide9" data-slide="9" data-stellar-background-ratio="0.5">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p><i>Nature</i>. Is it&hellip;</p>
+                <form class="answers" data-form="9">
+                    <input type="radio" name="q9" id="q9s" value="right" />
+                    <label for="q9s">Scholarly</label>
+
+                    <input type="radio" name="q9" id="q9t" value="wrong" />
+                    <label for="q9t">Trade</label>
+
+                    <input type="radio" name="q9" id="q9p" value="wrong" />
+                    <label for="q9p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  This is a scholarly journal.</div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> Despite the &quot;popular&quot; look of the cover, this is a scholarly journal. How do we know?
+                <ol>
+                    <li>In-depth articles written for a scientific audience.</li>
+                    <li>Description of research performed by the authors: &quot;<em>We</em> analysed its molecular dynamics&hellip;&quot;</li>
+                    <li>Authors have academic affiliations (see bottom of sample page).</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img-group">
+            <img class="cb-modal" alt="Nature cover" title="Nature cover" src="images/slide9/nature_cover.jpg" />
+            <img class="cb-modal" alt="Nature sample page" title="Nature sample page" src="images/slide9/nature_page.jpg" />
+        </div>
+        <a class="button" data-slide="10"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p>When you find an article in a database, you might not see the journal cover or table of contents. But there are still clues to the nature of the publication. Here's an entry in <i>PSYCH Info</i> for a paper from <i>Neurology</i>. Is that journal &hellip;</p>
+                <form class="answers" data-form="10">
+                    <input type="radio" name="q10" id="q10s" value="right" />
+                    <label for="q10s">Scholarly</label>
+
+                    <input type="radio" name="q10" id="q10t" value="wrong" />
+                    <label for="q10t">Trade</label>
+
+                    <input type="radio" name="q10" id="q10p" value="wrong" />
+                    <label for="q10p">Popular</label>
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+                <div class="rightResponse"><span class="answerFirst">Correct!</span>  This is a scholarly journal.</div>
+                <div class="wrongResponse"><span class="answerFirst">Incorrect.</span> This is a scholarly journal. How do we know?
+                <ol>
+                    <li>Credentials are given for the authors, both of whom are at the University of Washington.</li>
+                    <li>The phrase &quot;the author examines&quot; in the abstract suggests original research.</li>
+                    <li>The database is nice enough to actually tell you this is from a peer reviewed journal. (Look near the bottom.)</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+        <div class="img-group">
+            <img class="cb-modal" alt="Neurology article" title="Neurology article" src="images/slide10/balloonSicknessArticle.png" />
+        </div>
+        <a class="button" data-slide="11"><div class="icon-down"><img src="images/downCaret.svg"></div></a>
+    </div>
+
+    <div class="slide" id="slide11" data-slide="11" data-stellar-background-ratio="0">
+        <div class="slide-content">
+            <div class="inner-content">
+                <p>Thank you for working through this tutorial on types of publications. We hope you found it relatively painless.</p>
+                <p>If you are doing this tutorial for a class, fill out this form to send the instructor an e-mail. Otherwise, you can send one to your mom, who will be very proud. All form fields are required.</p>
+                <form method="post" name="mailForm" id="mailForm" action="../tut_mail.php">
+                    <div class="form-field">
+                        <label for="fromName">Your name </label>
+                        <input type="text" name="fromName" id="fromName" class="required" />
+                    </div>
+                    <div class="form-field">
+                        <label for="fromEmail">Your email </label>
+                        <input type="text" name="fromEmail" id="fromName" class="required email" />
+                    </div>
+                    <div class="form-field">
+                        <label for="toName">Your instructor's name </label>
+                        <input type="text" name="toName" id="toName" class="required" />
+                    </div>
+                    <div class="form-field">
+                        <label for="toEmail">Your instructor's email </label>
+                        <input type="text" name="toEmail" id="toEmail" class="required email" />
+                    </div>
+                    <input type="hidden" name="whichTutorial" value="Types of Journals" />
+                    <div class="form-field">
+                        <label for="check">What's 4 times 3? </label>
+                        <input type="text" name="check" id="check" maxlength="3" size="3" class="required" />
+                        <small>(This lets us know you're human.)</small>
+                    </div>
+                    <input type="hidden" name="answerCheck" id="answerCheck" value="0" />
+                    <input type="submit" name="submit" value="Submit">
+                    <div id="confirmationMessage"></div>
+                </form>
+            </div>
+        </div>
+        <span class="slide-title">thanks!</span>
+        <img src="images/slide1/iclibAirVent.svg" id="air-vent-image" data-stellar-ratio="1.6" />
+    </div>
+
+<script src="../../js/jquery.validate.min.js"></script>
+
+</body>
+</html>

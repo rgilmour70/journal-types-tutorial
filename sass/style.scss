@@ -1,0 +1,524 @@
+@import 'mixins';
+@import url(//fonts.googleapis.com/css?family=Anton);
+
+@include keyframes(spin) {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+$coverColor: LightSeaGreen;
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+#logo {
+	position: fixed;
+	z-index: 1;
+	top: 24px;
+	left: 60%;
+	width: 40%;
+	height: auto;
+}
+.navigation {
+	position: fixed;
+	z-index: 1;
+	top: 20px;
+	padding-left: 0;
+	li {
+		position: relative;
+		background-color: black;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+		display: block;
+		padding: 0 10px;
+		line-height: 32px;
+		margin-bottom: 4px;
+		font-weight: bold;
+		text-align: right;
+		width: 22px;
+		color: white;
+	}
+	li:hover, .active {
+		cursor: pointer;
+		border-radius: 0;
+		&:after {
+			content: '';
+			position: absolute;
+			margin-left: 10px;
+			border-top: 16px solid transparent;
+			border-bottom: 16px solid transparent;
+			border-left: 16px solid black;
+		}
+	}
+}
+
+#loadingDiv {
+	position: fixed;
+	top: 40%;
+	left: 40%;
+	z-index: 3;
+	width: 25%;
+	height: auto;
+	text-align: center;
+	font-size: 1.2em;
+	#loadingImage {
+		@include animation(spin 10s linear infinite);
+	}
+}
+
+.slide-title {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 4em;
+	font-weight: bold;
+	z-index: 1;
+	font-family: 'Anton', sans-serif;
+	line-height: 1em;
+	text-align: right;
+	padding-right: 5px;
+}
+.button {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	background-color: black;
+	color: #eee;
+	vertical-align: top;
+	z-index: 4;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	.icon-down {
+		width: 20px;
+		height: auto;
+		margin-top: 20px;
+		margin-left: 16px;
+	}
+}
+.button:hover {
+	background-color: #494949;
+	cursor: pointer;
+}
+
+// Slides 
+
+.slide {
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	position:relative;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3) inset;
+}
+
+#slide1 {
+	@extend .slide;
+	background-color: $coverColor;
+	#air-vent-image {
+		position: absolute;
+		top: 64%;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+}
+
+#slide2 {
+	@extend .slide;
+	background: url(../images/slide2/bieber.jpg) #FE3521;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#slide3 {
+	@extend .slide;
+	background: url(../images/slide3/analytical_chemistry.png) #ccc;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#slide4, #slide5, #slide6, #slide7, #slide8, #slide9, #slide10 {
+	@extend .slide;
+	.inner-content {
+		z-index: 3;
+	}
+	.img-group {
+		position: absolute;
+		top: 35%;
+		left: 15%;
+		max-width: 70%;
+		img {
+			display: inline-block;
+			margin-left: 1em;
+			z-index: 2;
+			max-width: 30%;
+			position: relative;
+			box-shadow: 3px 3px 5px #333;
+		}
+	}
+}
+
+#slide4 {
+	background-image: url(../images/slide4/stadiumCrowd.jpg);
+	background-size: cover;
+}
+#slide5 {
+	background-color: DeepPink;
+}
+#slide6 {
+	background-image: url(../images/slide6/manhattan_bw2.jpg);
+	background-size: cover;
+}
+#slide7 {
+	background: url(../images/slide7/flasks.jpg);
+	background-size: cover;
+}
+#slide8 {
+	background-color: #555;
+	overflow: hidden;
+	.inner-content {
+		z-index: 5;
+	}
+	.bot {
+		position: absolute;
+		display: block;
+	}
+	.bot[data-stellar-ratio="0.8"] { // background
+		z-index: 0;
+		@include scale(0.6);
+		@include blur(5px);
+	}
+	.bot[data-stellar-ratio="1"] { // midground
+		z-index: 1;
+		@include scale(0.9);
+		@include blur(1px);
+	}
+	.bot[data-stellar-ratio="2"] {  // foreground
+		z-index: 3;
+	}
+	#bot1a {
+		top: 30%;
+		left: 60%;
+		@include rotate(50deg);
+	}
+	#bot1b {
+		top: 40%;
+		left: 10%;
+	}
+	#bot1c {
+		top: 20%;
+		left: 70%;
+	}
+	#bot1d {
+		top: 5%;
+		left: 10%;
+	}
+	#bot1e {
+		top: 90%;
+		left: 51%;
+		@include rotate(160deg);
+	}
+	#bot1f {
+		top: 80%;
+		left: 80%;
+	}
+	#bot1g {
+		top: 20%;
+		left: 80%;
+	}
+	#bot1h {
+		top: 25%;
+		left: 36%;
+	}
+	#bot1i {
+		top: 86%;
+		left: 61%;
+	}
+	#bot1j {
+		top: 76%;
+		left: 52%;
+	}
+	#bot1k {
+		top: 77%;
+		left: 21%;
+	}
+	#bot1l {
+		top: 65%;
+		left: 65%;
+		@include rotate(190deg);
+	}
+	#bot1m {
+		top: 73%;
+		left: 12%;
+	}
+	#bot2a {
+		top: 70%;
+		left: 20%;
+		z-index: 4;
+	}
+	#bot2b {
+		top: 10%;
+		left: 65%;
+	}
+	#bot2c {
+		top: 60%;
+		left: 30%;
+	}
+	#bot2d {
+		top: 52%;
+		left: 93%;
+	}
+	#bot2e {
+		top: 68%;
+		left: 76%;
+		@include rotate(90deg);
+	}
+	#bot2f {
+		top: 80%;
+		left: 5%;
+	}
+	#bot2g {
+		top: 75%;
+		left: 73%;
+	}
+	#bot2h {
+		top: 15%;
+		left: 84%;
+	}
+	#bot2i {
+		top: 90%;
+		left: 42%
+	}
+	#bot2j {
+		top: 20%;
+		left: 48%;
+	}
+	#bot2k {
+		top: 46%;
+		left: 14%;
+		@include rotate(50deg);
+	}
+	#bot2l {
+		top: 55%;
+		left: 81%;
+		@include rotate(45deg);
+	}
+	#bot2m {
+		top: 80%;
+		left: 62%;
+		@include rotate(40deg);
+	}
+	#bot2n {
+		top: 20%;
+		left: 35%;
+	}
+	#bot2o {
+		top: 60%;
+		left: 53%;
+	}
+	#bot2p {
+		top: 58%;
+		left: 78%;
+	}
+	#bot2q {
+		top: 15%;
+		left: 46%;
+	}
+	#bot2r {
+		top: 32%;
+		left: 18%;
+	}
+	#bot3a {
+		top: 20%;
+		left: 30%;
+	}
+	#bot3b {
+		top: 10%;
+		left: 30%;
+		@include rotate(95deg);
+	}
+	#bot3c {
+		top: 5%;
+		left: 81%;
+	}
+	#bot3d {
+		top: 51%;
+		left: 30%;
+	}
+	#bot3e {
+		top: 67%;
+		left: 83%;
+	}
+	#bot3f {
+		top: 30%;
+		left: 15%;
+	}
+	#bot3g {
+		top: 32%;
+		left: 10%;
+		@include rotate(90deg);
+	}
+	#bot3h {
+		top: 40%;
+		left: 15%;
+	}
+	#bot3i {
+		top: 12%;
+		left: 91%;
+	}
+	#bot3j {
+		top: 45%;
+		left: 79%;
+		@include rotate(85deg);
+	}
+	#bot3k {
+		top: 23%;
+		left: 17%;
+		@include rotate(40deg);
+		z-index: 4;
+	}
+	#bot3l {
+		top: 18%;
+		left: 9%;
+		@include rotate(25deg);
+	}
+	#bot3m {
+		top: 83%;
+		left: 13%;
+		@include rotate(96deg);
+	}
+}
+#slide9 {
+	background-image: url(../images/slide9/subway2.jpg);
+	background-size: cover;
+}
+#slide10 {
+	background-image: url(../images/slide10/balloons.jpg);
+	background-size: cover;
+	.img-group {
+		top: 40%;
+		img {
+			max-width: 45%;
+		}
+	}
+}
+#slide11 {
+	@extend .slide;
+	background-color: $coverColor;
+	#confirmationMessage {
+		color: red;
+	}
+}
+.slide-content {
+	margin-left: 23%;
+	padding-top: 10%;
+	font-family: Verdana, sans-serif;
+	ul, ol {
+		padding-top: 1em;
+		padding-left: 1.5em;
+	}
+	ul > li {
+		list-style-type: disc;
+	}
+	.inner-content {
+		background-color: white;
+		margin-left: 15%;
+		padding: 1em;
+		border-width: 1px 0 1px 1px;
+		border-style: solid;
+		border-color: #555;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		position: relative;
+		#slide6 & {
+			margin-left: 10%;
+		}
+		#slide7 & {
+			margin-left: 15%;
+		}
+		form {
+			margin-left: 1em;
+			padding: 0.8em;
+			font-size: 0.9em;
+		}
+	}
+	.rightResponse, .wrongResponse {
+		display: none;
+	}
+	blockquote {
+		font-size: 0.8em;
+		border-left: 3px solid #999;
+		padding-left: 1em;
+		.citation {
+			font-size: 0.8em;
+			margin-left: 1em;
+		}
+	}
+}
+
+.rightResponse, .wrongResponse {
+	padding-top: 1em;
+}
+.rightResponse .answerFirst {
+	color: Green;
+}
+.wrongResponse .answerFirst {
+	color: Red;
+}
+
+.answers {
+	label {  
+		display: inline-block;  
+		cursor: pointer;  
+		position: relative;  
+		padding-left: 25px;  
+		margin-right: 15px;  
+		font-size: 20px;  
+
+	}
+	label:before {
+		content: '';
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		position: absolute;
+		left: 0;
+		background-color: #eee;
+		box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+		border-radius: 10px;
+	}
+	input[type=radio] {
+		display: none;
+	}
+	input[type=radio]:checked + label:before {
+		content: "\2022";
+		color: LimeGreen;
+		font-size: 35px;
+		text-align: center;
+		line-height: 16px;
+		vertical-align: sub;
+	}
+}
+
+.form-field {
+	margin-bottom: 1em;
+}
+
+.error {
+	color: Red;
+}
+
